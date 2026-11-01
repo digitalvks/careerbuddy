@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&display=swap" rel="stylesheet">
+<title>David Resumes | Resume &amp; Career Coaching</title>
+<style>
+:root{color-scheme:light;--bg:#fdf6ec;--ink:#2d2118;--muted:#7b6657;--terra:#d9593b;--terra-d:#c14a2e;--apricot:#f6c38b;--peach:#fde3c8;--sage:#3f6b57;--sage-l:#dbe8d6;--line:#ecd9c3;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;overflow-x:hidden}
+h1,h2,h3,.name,.price{font-family:Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-weight:800;line-height:1.1;margin:0;letter-spacing:-.02em}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+.btn{display:block;text-align:center;background:var(--terra);color:#fff;text-decoration:none;font-weight:700;padding:15px 26px;border-radius:99px;box-shadow:0 8px 18px -8px rgba(217,89,59,.6);transition:transform .15s,background .15s}
+.btn:hover{background:var(--terra-d)}.btn:active{transform:scale(.98)}
+.btn.soft{background:#fff;color:var(--ink);box-shadow:inset 0 0 0 2px var(--line)}
+.btn.cream{background:var(--bg);color:var(--terra-d);box-shadow:none}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.name{font-size:1.4rem;color:var(--ink);text-decoration:none;letter-spacing:-.02em}.name span{color:var(--terra)}
+.name i{font-style:normal;color:var(--terra)}
+header .btn{padding:9px 18px;font-size:.9rem;box-shadow:none}
+.hero{position:relative;padding:28px 0 48px;background:radial-gradient(circle,#f1dcc4 1.2px,transparent 1.6px) 0 0/22px 22px}
+.pill{display:inline-block;background:var(--sage-l);color:var(--sage);font-weight:700;font-size:.82rem;padding:6px 14px;border-radius:99px;margin-bottom:20px}
+.hero h1{font-size:clamp(2.5rem,11.5vw,4rem);line-height:1.06;margin-bottom:22px}
+.hero h1 span{color:var(--terra)}
+.lede{font-size:1.08rem;color:var(--muted);margin:0 0 32px}
+.actions{display:grid;gap:12px}.contact{margin:22px 0 0;font-size:.95rem;color:var(--muted)}.contact a{color:var(--terra-d);font-weight:700;word-break:break-all}
+.art{margin:44px auto 0;max-width:300px}
+.art svg{width:100%;height:auto;display:block}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:36px}
+.chip{display:flex;align-items:center;gap:8px;background:#fff;border:1.5px solid var(--line);border-radius:99px;padding:7px 14px;font-size:.88rem;font-weight:600}
+.chip::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--terra)}
+.chip:nth-child(2)::before{background:var(--sage)}.chip:nth-child(3)::before{background:var(--apricot)}
+.band{background:var(--peach);position:relative;padding:64px 0 72px;margin-top:48px}
+.wave{position:absolute;left:0;right:0;top:-1px;transform:translateY(-99%);line-height:0}
+.wave svg{display:block;width:100%;height:32px}
+.head{margin-bottom:32px}
+.head h2{font-size:clamp(1.9rem,7.5vw,2.6rem);margin-bottom:10px}.head h2::before{content:"";display:block;width:36px;height:4px;border-radius:4px;background:var(--terra);margin-bottom:16px}
+.head p{margin:0;color:var(--muted)}
+.grid{display:grid;gap:20px}
+.card{background:#fff;border-radius:26px;padding:24px;display:flex;flex-direction:column;box-shadow:0 12px 28px -18px rgba(90,50,20,.45)}
+.ico{width:54px;height:54px;border-radius:18px;display:grid;place-items:center;margin-bottom:16px;background:var(--peach);color:var(--terra)}
+.ico svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.c2 .ico{background:var(--sage-l);color:var(--sage)}
+.card h3{font-size:1.3rem}
+.price{font-size:2.2rem;margin:4px 0 12px;color:var(--terra)}
+.card p{color:var(--muted);margin:0 0 24px;flex:1;font-size:.97rem}
+.card.feat{background:var(--sage);color:#fff}
+.card.feat .ico{background:rgba(255,255,255,.16);color:#fff}
+.card.feat .price{color:var(--apricot)}.card.feat p{color:#d6e4da}
+.card.feat .btn{background:var(--apricot);color:var(--ink);box-shadow:none}
+.flag{align-self:flex-start;background:var(--apricot);color:var(--ink);font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:99px;margin-bottom:12px}
+section.pad{padding:72px 0 0}
+.about{display:grid;gap:24px;background:#fff;border-radius:30px;padding:28px;box-shadow:0 12px 28px -18px rgba(90,50,20,.45)}
+.avatar{width:92px;height:92px;border-radius:50%;background:var(--terra);color:#fff;display:grid;place-items:center;font-size:1.8rem;font-weight:700;box-shadow:0 0 0 6px var(--peach),0 0 0 8px var(--apricot)}
+.about h2{font-size:1.8rem;margin-bottom:12px}
+.about p{margin:0 0 12px;color:var(--muted)}
+.steps{list-style:none;margin:0;padding:0;position:relative}
+.steps li{position:relative;padding:0 0 36px 64px}
+.steps li:last-child{padding-bottom:0}
+.steps li::before{content:"";position:absolute;left:21px;top:46px;bottom:4px;border-left:2px dotted var(--apricot)}
+.steps li:last-child::before{display:none}
+.steps b.n{position:absolute;left:0;top:0;width:44px;height:44px;border-radius:50%;background:var(--apricot);display:grid;place-items:center;font-size:1.1rem;font-weight:700}
+.steps h3{font-size:1.15rem;margin-bottom:2px}
+.steps p{margin:0;color:var(--muted);font-size:.97rem}
+.cta{position:relative;overflow:hidden;background:var(--terra);color:#fff;border-radius:32px;padding:52px 24px;text-align:center}
+.cta::before,.cta::after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.12)}
+.cta::before{width:180px;height:180px;left:-60px;top:-60px}
+.cta::after{width:240px;height:240px;right:-90px;bottom:-110px}
+.cta *{position:relative}
+.cta h2{font-size:clamp(1.7rem,7vw,2.4rem);margin-bottom:10px}
+.cta p{margin:0 0 22px;color:#ffe9de}
+.cta .btn{max-width:280px;margin:0 auto}.cta .mail{margin:22px 0 0;font-size:.95rem;color:#ffe9de}.cta .mail a{color:#fff;font-weight:700;text-decoration:underline;word-break:break-all}
+footer{text-align:center;color:var(--muted);font-size:.88rem;padding:48px 0 40px}
+@media(min-width:700px){
+.wrap{padding:0 32px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center}
+.hero{padding:40px 0 56px}
+.art{margin:0}
+.chips{grid-column:1/-1}
+.actions{grid-template-columns:auto auto;justify-content:start}
+.grid{grid-template-columns:repeat(2,1fr)}
+.about{grid-template-columns:auto 1fr;gap:34px;padding:38px;align-items:center}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.steps li{padding:62px 0 0}
+.steps li::before{left:44px;right:-20px;top:21px;bottom:auto;border-left:0;border-top:2px dotted var(--apricot)}
+.steps li:last-child::before{display:none}
+}
+@media(min-width:980px){.grid{grid-template-columns:repeat(4,1fr)}}
+</style>
+</head>
+<body>
+<div class="hero">
+<div class="wrap">
+<header style="grid-column:1/-1"><a class="name" href="#top">David <span>Resumes</span></a><a class="btn" href="https://tally.so/r/M1Xb6X" target="_blank" rel="noopener">Create resume</a></header>
+<div id="top">
+<span class="pill">Ex-Google · Former recruiter</span>
+<h1>Your resume, <span>ready</span> to be noticed.</h1>
+<p class="lede">With 19+ years in recruiting and career coaching, I’ll help you tell your story clearly and get past the first screen.</p>
+<div class="actions">
+<a class="btn" href="https://tally.so/r/M1Xb6X" target="_blank" rel="noopener">Create resume</a>
+<a class="btn soft" href="#services">See services</a>
+</div>
+<p class="contact">Questions? Email <a href="mailto:dbrook.services@gmail.com">dbrook.services@gmail.com</a></p>
+</div>
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 320 270" xmlns="http://www.w3.org/2000/svg">
+<path d="M70 40c40-34 150-34 190 10 40 44 22 120-28 158-52 40-150 36-188-14C10 148 22 80 70 40z" fill="#fde3c8"/>
+<rect x="92" y="34" width="150" height="196" rx="16" fill="#fff" stroke="#ecd9c3" stroke-width="2"/>
+<circle cx="126" cy="72" r="16" fill="#f6c38b"/>
+<rect x="152" y="60" width="64" height="9" rx="4.5" fill="#2d2118"/>
+<rect x="152" y="77" width="44" height="7" rx="3.5" fill="#d9c3ab"/>
+<rect x="108" y="108" width="118" height="7" rx="3.5" fill="#f0e2d0"/>
+<rect x="108" y="124" width="96" height="7" rx="3.5" fill="#d9593b"/>
+<rect x="108" y="140" width="118" height="7" rx="3.5" fill="#f0e2d0"/>
+<rect x="108" y="156" width="80" height="7" rx="3.5" fill="#f0e2d0"/>
+<rect x="108" y="180" width="60" height="9" rx="4.5" fill="#2d2118"/>
+<rect x="108" y="196" width="104" height="7" rx="3.5" fill="#f0e2d0"/>
+<circle cx="244" cy="48" r="24" fill="#3f6b57"/>
+<path d="M233 49l8 8 14-16" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M36 176a16 16 0 0116-16h86a16 16 0 0116 16v26a16 16 0 01-16 16h-58l-22 20v-20h-6a16 16 0 01-16-16z" fill="#d9593b"/>
+<circle cx="72" cy="189" r="5" fill="#fff"/><circle cx="92" cy="189" r="5" fill="#fff"/><circle cx="112" cy="189" r="5" fill="#fff"/>
+<circle cx="276" cy="150" r="7" fill="#f6c38b"/><circle cx="292" cy="178" r="4" fill="#3f6b57"/><circle cx="40" cy="96" r="5" fill="#f6c38b"/>
+</svg>
+</div>
+<div class="chips"><span class="chip">19+ years experience</span><span class="chip">Ex-Google</span><span class="chip">ATS-friendly PDFs</span></div>
+</div>
+</div>
+
+<div class="band" id="services">
+<div class="wave"><svg viewBox="0 0 1200 32" preserveAspectRatio="none"><path d="M0 32V16C150 0 300 0 450 12s300 20 450 8 200-12 300-4v20z" fill="#fde3c8"/></svg></div>
+<div class="wrap">
+<div class="head"><h2>Pick what you need</h2><p>Simple prices. Secure PayPal checkout.</p></div>
+<div class="grid">
+<div class="card"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5l8.5 6 8.5-6"/></svg></div><h3>Cover letter</h3><div class="price">$30</div><p>A tailored letter that speaks directly to the role you want.</p><a class="btn" href="https://www.paypal.com/ncp/payment/HSG7YD86YMR4E" target="_blank" rel="noopener">Order now</a></div>
+<div class="card c2"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21M8 10.5h5"/></svg></div><h3>Resume review</h3><div class="price">$40</div><p>A detailed review with clear, practical fixes you can use right away.</p><a class="btn" href="https://www.paypal.com/ncp/payment/9AEAMSJJDRFKA" target="_blank" rel="noopener">Order now</a></div>
+<div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 5h12a2 2 0 012 2v6a2 2 0 01-2 2H9l-4 3.5V15H4a2 2 0 01-2-2V7a2 2 0 012-2z"/><path d="M20.5 9.5A2 2 0 0122 11.5v6a2 2 0 01-2 2h-.5V22L16 19.5h-4"/></svg></div><h3>Interview preparation</h3><div class="price">$50</div><p>30 likely interview questions, each with a strong answer.</p><a class="btn" href="https://www.paypal.com/ncp/payment/PQSE96VSXRGEE" target="_blank" rel="noopener">Order now</a></div>
+<div class="card feat"><span class="flag">Most complete</span><div class="ico"><svg viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5M9.5 14.5l2 2 3.5-4"/></svg></div><h3>Full resume rewrite</h3><div class="price">$80</div><p>A complete rewrite delivered as an ATS-friendly PDF, ready to send.</p><a class="btn" href="https://www.paypal.com/ncp/payment/C9WRUZY7A4UUE" target="_blank" rel="noopener">Order now</a></div>
+</div>
+</div>
+</div>
+
+<div class="wrap">
+<section class="pad">
+<div class="about">
+<div class="avatar">DR</div>
+<div>
+<h2>Hi, I’m David</h2>
+<p>I spent nearly two decades on the hiring side of the table as a recruiter, including time at Google, before becoming a career coach.</p>
+<p>I know what gets a resume shortlisted and what gets skipped in seconds, and I bring that to everything I write for you.</p>
+</div>
+</div>
+</section>
+
+<section class="pad">
+<div class="head"><h2>How it works</h2></div>
+<ol class="steps">
+<li><b class="n">1</b><h3>Tell me about you</h3><p>Fill out the short form with your background and goals.</p></li>
+<li><b class="n">2</b><h3>Choose a service</h3><p>Pick your package and pay securely with PayPal.</p></li>
+<li><b class="n">3</b><h3>Get your documents</h3><p>Receive polished materials and apply with confidence.</p></li>
+</ol>
+</section>
+
+<section class="pad">
+<div class="cta"><h2>Ready to stand out?</h2><p>Start with the quick form. It takes just a few minutes.</p><a class="btn cream" href="https://tally.so/r/M1Xb6X" target="_blank" rel="noopener">Create resume</a><p class="mail">Or email me at <a href="mailto:dbrook.services@gmail.com">dbrook.services@gmail.com</a></p></div>
+</section>
+<footer>© 2026 David Resumes · Resume &amp; Career Coaching</footer>
+</div>
+</body>
+</html>
