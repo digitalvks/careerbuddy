@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="color-scheme" content="light">
+<meta name="color-scheme" content="light"><meta name="description" content="Personal resume writing and career coaching from David, a former Google recruiter with 19+ years of experience.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 <title>David Resumes | Resume &amp; Career Coaching</title>
 <style>
 :root{color-scheme:light;--bg:#fdf6ec;--ink:#2d2118;--muted:#7b6657;--terra:#d9593b;--terra-d:#c14a2e;--apricot:#f6c38b;--peach:#fde3c8;--sage:#3f6b57;--sage-l:#dbe8d6;--line:#ecd9c3;
@@ -92,15 +92,105 @@ footer{text-align:center;color:var(--muted);font-size:.88rem;padding:48px 0 40px
 .steps li:last-child::before{display:none}
 }
 @media(min-width:980px){.grid{grid-template-columns:repeat(4,1fr)}}
+
+/* Editorial refinement */
+:root{--bg:#f8f7f2;--ink:#172e29;--muted:#65706a;--terra:#244d40;--terra-d:#183b30;--apricot:#d9bc86;--peach:#edece4;--sage:#203e33;--sage-l:#e9eee7;--line:#dedfd5}
+body{font-family:'DM Sans',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.name,.price{font-family:'Playfair Display',Georgia,serif;font-weight:500;letter-spacing:-.045em}
+.wrap{max-width:1240px;padding:0 40px}
+header{padding:30px 0 26px;border-bottom:1px solid var(--line);gap:24px}
+.name{font-family:'DM Sans',sans-serif;font-weight:600;font-size:24px;letter-spacing:-1.3px;white-space:nowrap}.name span{font-weight:400;color:var(--ink)}.name i{color:#b39760}
+nav{display:flex;gap:30px;margin-left:auto;margin-right:28px}nav a{color:var(--muted);font-size:13px;text-decoration:none;transition:color .25s}nav a:hover{color:var(--ink)}
+.btn{border-radius:5px;font-size:13px;font-weight:500;padding:17px 24px;box-shadow:none;transition:transform .3s,background .3s,box-shadow .3s;display:flex;align-items:center;justify-content:center;gap:22px}.btn::after{content:'↗';font-size:18px}.btn:hover{transform:translateY(-3px);box-shadow:0 10px 25px #183b3018}.btn.soft{background:transparent;box-shadow:inset 0 0 0 1px #ccd2c8}.btn.soft::after{content:'↓'}header .btn{padding:11px 18px}
+.hero{padding:0 0 32px;background:radial-gradient(ellipse at 87% 50%,#e6eadf 0,transparent 48%)}
+.hero .wrap{grid-template-columns:1.15fr 1fr;gap:68px 50px}.hero h1{font-size:clamp(48px,5.4vw,74px);line-height:1.09;letter-spacing:-.055em;margin:0 0 26px}.hero h1 span{font-style:italic;color:#52715b}
+.pill{font:500 10px/1.5 'DM Sans',sans-serif;letter-spacing:1.6px;background:transparent;padding:0;color:#68756a;margin:0 0 27px;display:flex;align-items:center;gap:9px}.status-dot{width:6px;height:6px;border-radius:50%;background:#668765;box-shadow:0 0 0 4px #66876512;flex-shrink:0}
+.lede{font-size:16px;line-height:1.8;max-width:450px;margin-bottom:30px}.actions{gap:12px}.contact{font-size:11px;margin-top:23px}.contact a{font-weight:400;color:var(--muted);text-underline-offset:3px}
+.art{position:relative;width:100%;max-width:440px;min-height:475px;display:grid;place-items:center;margin:0 auto;perspective:1200px}.art-orbit{position:absolute;width:390px;height:390px;border:1px solid #b2bca666;border-radius:50%}.art-orbit::before{content:'';position:absolute;inset:24px;border:1px solid #b2bca633;border-radius:50%}
+.resume-preview{position:relative;width:300px;padding:29px 28px 19px;background:#fffefa;box-shadow:0 28px 55px #263f291c,0 0 0 1px #fff;border-radius:3px;transform:rotate(-7deg);animation:documentFloat 8s ease-in-out infinite}
+.doc-top{display:flex;justify-content:space-between;font-size:6px;letter-spacing:1.4px;color:#8b958b}.doc-name{font:30px 'Playfair Display',Georgia,serif;margin-top:24px}.doc-role{font-size:6px;letter-spacing:1.6px;margin-top:5px}.doc-rule{height:1px;background:#bbc5b6;margin:18px 0}.doc-label{font-size:6px;letter-spacing:1.7px;color:#5e785f;margin:18px 0 9px}.doc-copy{font-size:8px;color:#6d756a;margin:0 0 9px}.doc-line{height:4px;background:#e9eae2;margin-bottom:7px;width:100%}.doc-line.short{width:75%}.doc-job{font-size:9px;margin-bottom:12px}.doc-bottom{border-top:1px solid #e3e7dc;margin-top:26px;padding-top:14px;display:flex;justify-content:space-between;font-size:6px;color:#89927f}.doc-bottom span{font:16px Georgia;color:var(--ink)}
+.floating-note{position:absolute;bottom:66px;right:-12px;background:#fffefa;display:flex;align-items:center;gap:12px;padding:16px 21px;border:1px solid #e4e7dc;box-shadow:0 12px 30px #243e2912;border-radius:7px;font-size:11px;animation:noteFloat 7s ease-in-out infinite}.floating-note small{display:block;color:var(--muted);font-size:9px;margin-top:3px}.note-check{display:grid;place-items:center;width:29px;height:29px;border-radius:50%;background:#e9eee3;color:#55704c}.art-caption{position:absolute;bottom:0;font-size:8px;letter-spacing:2px;color:#88917f}
+.chips{margin:0;padding:27px 0 3px;border-top:1px solid var(--line);justify-content:space-between;gap:20px}.chip{background:transparent;border:0;padding:0;font-size:11px;font-weight:400;letter-spacing:.3px}.chip::before{width:5px;height:5px;background:#9d875d!important}
+.band{background:#eeefe7;margin-top:30px;padding:90px 0}.wave{display:none}.head{margin-bottom:40px}.eyebrow{display:block;font-size:9px;letter-spacing:2px;color:#7c886f;margin-bottom:17px}.head h2{font-size:clamp(34px,4vw,47px);line-height:1.16;margin-bottom:18px}.head h2::before{display:none}.head h2 em{font-weight:400;color:#71846b}.head p{font-size:13px}.grid{gap:14px}.card{border-radius:7px;padding:27px 23px;border:1px solid #dce0d4;background:#f9faf5;box-shadow:none;position:relative;transition:transform .4s,box-shadow .4s,border-color .4s}.card:hover{transform:translateY(-8px);box-shadow:0 20px 35px #263e2910;border-color:#a6b39b}.ico{background:transparent!important;width:34px;height:34px;margin-bottom:35px;border-radius:0;color:#63785c!important}.ico svg{width:25px;height:25px;stroke-width:1.3}.card h3{font-family:'DM Sans',sans-serif;font-weight:500;font-size:15px;letter-spacing:-.3px;min-height:37px}.price{font-size:43px;color:var(--ink);margin:13px 0 19px}.card p{font-size:12px;line-height:1.8;margin-bottom:28px}.card .btn{font-size:11px;padding:13px 14px;background:transparent;color:var(--ink);border:1px solid #ccd2c3;justify-content:space-between}.card.feat{background:#203e33;border-color:#203e33}.card.feat .ico{color:#dfc590!important}.card.feat .price{color:#dfc590}.card.feat .btn{background:#dfc590;border-color:#dfc590}.flag{position:absolute;top:30px;right:20px;border-radius:3px;background:#ffffff12;color:#e6d5b4;font-size:8px;padding:5px 9px;letter-spacing:.5px}
+section.pad{padding-top:90px;scroll-margin-top:30px}.about{border-radius:7px;background:transparent;box-shadow:none;border:1px solid var(--line);padding:45px;gap:55px}.avatar{width:170px;height:190px;border-radius:3px;background:#e8eadf;box-shadow:none;color:#6d8061;font:italic 100px 'Playfair Display',Georgia,serif;position:relative}.avatar span{position:absolute;bottom:16px;font:8px 'DM Sans',sans-serif;letter-spacing:.3px;color:#69755f}.about h2{font-size:35px;margin-bottom:20px}.about p{font-size:14px;line-height:1.9;max-width:690px}.steps{gap:45px}.steps b.n{background:transparent;color:#8e9b7d;font:italic 30px Georgia;width:auto;height:auto}.steps li::before{border-color:#d7ddcd;top:18px;left:48px;border-top-style:solid}.steps h3{font-family:'DM Sans',sans-serif;font-size:14px;letter-spacing:-.2px;font-weight:500;margin-bottom:12px}.steps p{font-size:13px;line-height:1.8}.cta{border-radius:8px;background:#203e33;padding:75px 28px}.cta h2{font-size:clamp(36px,5vw,56px)}.cta p{font-size:14px;color:#c6d2c5;margin-top:17px}.cta .btn{background:#e2cca2;color:#203e33;margin-top:30px;max-width:215px}.cta .mail{font-size:11px;color:#b7c8b5}.cta::before,.cta::after{background:transparent;border:1px solid #ffffff0b;width:500px;height:500px}.cta::before{left:-230px;top:-250px}.cta::after{right:-230px;bottom:-300px}footer{font-size:10px;padding:36px 0}
+a:focus-visible{outline:2px solid #aa8e57;outline-offset:5px}#about,#process,#services{scroll-margin-top:30px}
+.reveal{opacity:1;transform:none}.motion-ready .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--delay,0s)}.motion-ready .reveal.visible{opacity:1;transform:translateY(0)}
+@keyframes documentFloat{0%,100%{transform:translateY(0) rotate(-7deg)}50%{transform:translateY(-12px) rotate(-5deg)}}@keyframes noteFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+@media(max-width:979px){.grid{grid-template-columns:repeat(2,1fr)}.hero .wrap{gap:45px 25px}.hero h1{font-size:54px}.floating-note{right:-5px}.art-orbit{width:320px;height:320px}.resume-preview{width:260px}.art{min-height:440px}nav{gap:18px;margin-right:0}.about{gap:35px}}
+@media(max-width:699px){.wrap{padding:0 23px}header{padding:24px 0;margin-bottom:42px}nav{display:none}header .btn{font-size:10px;padding:10px 12px;gap:8px}.name{font-size:21px}.hero h1{font-size:clamp(45px,10.8vw,64px)}.pill{font-size:8px;letter-spacing:1.1px}.lede{font-size:15px}.actions{display:flex;flex-wrap:wrap}.actions .btn{font-size:12px;padding:14px 18px;gap:14px}.contact{font-size:10px}.art{margin:35px auto 20px;min-height:440px;max-width:360px}.floating-note{right:0;bottom:53px}.art-caption{font-size:7px;letter-spacing:1.7px}.chips{gap:15px;justify-content:center;padding:25px 0 5px}.chip{font-size:9px}.band{padding:58px 0;margin-top:20px}.grid{grid-template-columns:1fr}.card{padding:28px}.card h3{min-height:0}.ico{margin-bottom:23px}.price{margin-top:16px}.card p{font-size:13px}.card .btn{font-size:12px}.about{padding:27px;gap:25px}.avatar{width:100px;height:115px;font-size:65px}.avatar span{font-size:6px;bottom:10px}.about h2{font-size:31px}.about p{font-size:13px}section.pad{padding-top:58px}.steps li{padding:0 0 35px 58px}.steps li::before{left:14px;top:42px;bottom:10px;border:0;border-left:1px solid #d7ddcd}.steps h3{padding-top:4px}.cta{padding:56px 22px}.cta .mail{font-size:10px}.head{margin-bottom:30px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.motion-ready .reveal{opacity:1;transform:none}}
+
+
+/* Phone refinements. Existing tablet rules remain unchanged at 600–1023px. */
+@media (max-width:599px){
+ :root{padding-top:0;padding-bottom:0}
+ body{overflow-x:visible}
+ .wrap{width:100%;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+ .hero{padding-top:env(safe-area-inset-top,0px);padding-bottom:22px}
+ .hero .wrap{display:block}
+ header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px 10px;padding:20px 0 12px;margin-bottom:34px}
+ header .name{font-size:clamp(19px,5.3vw,23px);letter-spacing:-1px}
+ header>.btn{grid-column:2;grid-row:1;min-height:44px;padding:10px 12px;font-size:11px;gap:9px}
+ header nav{display:flex;grid-column:1/-1;grid-row:2;justify-content:space-between;gap:8px;margin:0;border-top:1px solid var(--line);padding-top:3px}
+ header nav a{display:flex;align-items:center;justify-content:center;min-height:44px;font-size:12px;padding:0 7px}
+ .pill{font-size:9px;line-height:1.8;letter-spacing:1px;align-items:flex-start;gap:10px;margin-bottom:22px;max-width:340px}
+ .status-dot{margin-top:5px}
+ .hero h1{font-size:clamp(39px,10.7vw,62px);line-height:1.12;letter-spacing:-.05em;margin-bottom:22px;overflow-wrap:normal}
+ .lede{font-size:15px;line-height:1.85;max-width:38ch;margin-bottom:25px}
+ .actions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
+ .actions .btn{min-height:50px;padding:13px 12px;gap:10px;font-size:12px;white-space:nowrap}
+ .btn{min-height:48px;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+ .contact{font-size:11px;line-height:1.8;margin-top:18px;overflow-wrap:anywhere}.contact a{display:inline-block;min-height:32px;padding-top:4px;word-break:normal}
+ .art{width:100%;max-width:360px;min-height:420px;margin:20px auto 24px;perspective:none}
+ .art-orbit{width:min(100%,320px);height:auto;aspect-ratio:1}
+ .resume-preview{width:min(76%,270px);padding:25px 23px 18px}
+ .doc-name{font-size:28px}.doc-top{letter-spacing:1px}.doc-copy{line-height:1.7}.doc-label{margin-top:16px}
+ .floating-note{right:0;bottom:42px;padding:13px 15px;gap:10px;max-width:100%;font-size:10px}.floating-note small{font-size:9px}.note-check{flex-shrink:0}
+ .art-caption{bottom:0;width:100%;text-align:center;line-height:1.8;font-size:7px;letter-spacing:1.3px}
+ .chips{display:grid;grid-template-columns:1fr;gap:13px;padding:22px 0 3px;margin:0}
+ .chip{font-size:11px;justify-content:center;line-height:1.5}
+ .band{padding:50px 0;margin-top:20px}.head{margin-bottom:26px}.eyebrow{font-size:8px;line-height:1.8;letter-spacing:1.6px;margin-bottom:13px}
+ .head h2{font-size:clamp(31px,8.8vw,42px);line-height:1.2;margin-bottom:15px}.head p{font-size:12px;line-height:1.8}
+ .grid{grid-template-columns:minmax(0,1fr);gap:16px}.card{padding:26px;min-width:0}.card h3{font-size:17px;line-height:1.4;min-height:0}.ico{margin-bottom:21px}.price{font-size:43px;line-height:1.15;margin:14px 0 16px}.card p{font-size:14px;line-height:1.8;margin-bottom:24px}.card .btn{font-size:12px;min-height:48px;padding:12px 16px}.flag{top:28px;right:25px}
+ section.pad{padding-top:52px}.about{display:grid;grid-template-columns:minmax(0,1fr);padding:26px;gap:26px}.avatar{width:110px;height:125px}.about h2{font-size:31px;line-height:1.2;margin-bottom:16px}.about p{font-size:14px;line-height:1.85}.about p:last-child{margin-bottom:0}
+ .steps{display:block}.steps li{padding:0 0 32px 52px;min-width:0}.steps h3{font-size:15px;line-height:1.5;padding-top:2px;margin-bottom:8px}.steps p{font-size:14px;line-height:1.8}.steps li::before{left:13px;top:41px;bottom:8px;right:auto;border:0;border-left:1px solid #d7ddcd}.steps li:last-child{padding-bottom:0}
+ .cta{padding:46px 23px}.cta h2{font-size:clamp(31px,8.8vw,43px);line-height:1.15}.cta p{font-size:14px;line-height:1.8;margin-top:18px}.cta .btn{min-height:50px;width:100%;max-width:260px;margin-top:24px}.cta .mail{font-size:11px;line-height:1.9;margin-top:20px;overflow-wrap:anywhere}.cta .mail a{display:inline-block;word-break:normal;padding:5px 0}
+ footer{font-size:10px;line-height:1.8;padding:30px 0 calc(28px + env(safe-area-inset-bottom,0px))}
+ #top,#services,#about,#process{scroll-margin-top:20px}
+ a:focus-visible{outline-offset:3px}
+}
+@media (max-width:359px){
+ .wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+ .hero h1{font-size:38px}.actions{grid-template-columns:1fr}.actions .btn{justify-content:space-between;padding-inline:20px}.art{min-height:402px}.resume-preview{width:78%;padding-inline:20px}.doc-name{font-size:25px}.floating-note{font-size:9px;padding:11px}.floating-note small{font-size:8px}.card,.about{padding:23px}.flag{right:22px}
+}
+/* Laptop and desktop refinements, isolated from phone and tablet layouts. */
+@media (min-width:1024px){
+ .wrap{max-width:1280px;padding-inline:clamp(32px,4vw,64px)}
+ .hero{padding-bottom:30px}.hero .wrap{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);column-gap:clamp(35px,5vw,78px);row-gap:clamp(40px,4.4vw,64px)}
+ header{padding:26px 0;gap:24px;min-width:0}.name{font-size:25px}nav{gap:clamp(24px,2.6vw,38px);margin-left:auto;margin-right:10px}nav a{display:flex;align-items:center;min-height:44px;font-size:13px;position:relative}nav a::after{content:'';position:absolute;bottom:6px;left:0;right:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .25s}nav a:hover::after,nav a:focus-visible::after{transform:scaleX(1)}header .btn{min-height:44px;padding:11px 19px}
+ #top{min-width:0}.pill{font-size:9px;line-height:1.7;letter-spacing:1.4px;margin-bottom:25px}.hero h1{font-size:clamp(58px,5.45vw,76px);line-height:1.09;margin-bottom:26px}.lede{font-size:16px;line-height:1.9;max-width:43ch;margin-bottom:29px}.actions{display:flex;gap:12px;flex-wrap:wrap}.actions .btn{min-height:52px;padding:15px 23px;gap:26px}.contact{font-size:11px;line-height:1.8;margin-top:18px}.contact a{word-break:normal}
+ .art{width:100%;max-width:460px;min-height:470px;isolation:isolate}.resume-preview{width:300px}.art-orbit{width:min(100%,400px);height:auto;aspect-ratio:1}.floating-note{right:0;bottom:62px;font-size:11px;padding:16px 19px}.art-caption{font-size:8px;letter-spacing:1.7px;bottom:0}.chips{margin:0;justify-content:space-between;padding:25px 0 4px}.chip{font-size:12px;gap:10px}
+ .band{padding:80px 0 84px;margin-top:30px}.head{margin-bottom:35px}.head h2{font-size:46px;line-height:1.17}.head p{font-size:14px}.eyebrow{font-size:9px;line-height:1.8}
+ .grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:stretch}.card{padding:27px 23px;min-width:0}.ico{margin-bottom:32px}.card h3{min-height:44px;font-size:16px;line-height:1.4;letter-spacing:-.4px}.price{font-size:46px;line-height:1.15;margin:14px 0 18px}.card p{font-size:13px;line-height:1.85;margin-bottom:27px}.card .btn{min-height:46px;padding:12px 13px;font-size:12px;gap:10px}.flag{font-size:8px;top:29px;right:17px;padding:5px 8px}
+ section.pad{padding-top:80px}.about{grid-template-columns:170px minmax(0,1fr);padding:42px;gap:50px;align-items:center}.about h2{font-size:37px;line-height:1.2;margin-bottom:17px}.about p{font-size:15px;line-height:1.9;max-width:70ch}.about p:last-child{margin-bottom:0}
+ .steps{grid-template-columns:repeat(3,minmax(0,1fr));gap:42px}.steps li{padding-top:62px;min-width:0}.steps h3{font-size:16px;line-height:1.4;margin-bottom:11px}.steps p{font-size:14px;line-height:1.85;max-width:30ch}.steps b.n{font-size:32px}.steps li::before{top:20px;left:48px;right:-20px}
+ .cta{padding:65px 40px}.cta h2{font-size:54px;line-height:1.15}.cta p{font-size:15px;line-height:1.8}.cta .btn{min-height:50px;max-width:235px;margin-top:27px}.cta .mail{font-size:12px;margin-top:20px}footer{font-size:11px;padding:36px 0 32px}
+}
+@media (min-width:1024px) and (max-width:1120px){
+ .hero .wrap{column-gap:32px}.hero h1{font-size:58px}.pill{font-size:8px;letter-spacing:1.2px}.card{padding:25px 18px}.card h3{font-size:15px}.card p{font-size:12px}.flag{right:14px;font-size:7px}.floating-note{font-size:10px;padding:14px 16px}
+}
+/* Hover movement only for precise pointers; touch scrolling stays stable. */
+@media (hover:none) and (max-width:599px){.btn:hover{transform:none;box-shadow:none}.card:hover{transform:none;box-shadow:none;border-color:#dce0d4}.card.feat:hover{border-color:#203e33}.btn:active{transform:scale(.98)}}
+
 </style>
 </head>
 <body>
 <div class="hero">
 <div class="wrap">
-<header style="grid-column:1/-1"><a class="name" href="#top">David <span>Resumes</span></a><a class="btn" href="https://tally.so/r/M1Xb6X" target="_blank" rel="noopener">Create resume</a></header>
+<header style="grid-column:1/-1"><a class="name" href="#top">david<span>resumes</span><i>.</i></a><nav aria-label="Main navigation"><a href="#services">Services</a><a href="#about">Meet David</a><a href="#process">The process</a></nav><a class="btn" href="https://tally.so/r/M1Xb6X" target="_blank" rel="noopener">Create resume</a></header>
 <div id="top">
-<span class="pill">Ex-Google · Former recruiter</span>
-<h1>Your resume, <span>ready</span> to be noticed.</h1>
+<span class="pill"><span class="status-dot"></span> CAREER SUPPORT, WITH AN INSIDER’S PERSPECTIVE</span>
+<h1>Your experience.<br>Your story.<br><span>Your next chapter.</span></h1>
 <p class="lede">With 19+ years in recruiting and career coaching, I’ll help you tell your story clearly and get past the first screen.</p>
 <div class="actions">
 <a class="btn" href="https://tally.so/r/M1Xb6X" target="_blank" rel="noopener">Create resume</a>
@@ -109,24 +199,20 @@ footer{text-align:center;color:var(--muted);font-size:.88rem;padding:48px 0 40px
 <p class="contact">Questions? Email <a href="mailto:dbrook.services@gmail.com">dbrook.services@gmail.com</a></p>
 </div>
 <div class="art" aria-hidden="true">
-<svg viewBox="0 0 320 270" xmlns="http://www.w3.org/2000/svg">
-<path d="M70 40c40-34 150-34 190 10 40 44 22 120-28 158-52 40-150 36-188-14C10 148 22 80 70 40z" fill="#fde3c8"/>
-<rect x="92" y="34" width="150" height="196" rx="16" fill="#fff" stroke="#ecd9c3" stroke-width="2"/>
-<circle cx="126" cy="72" r="16" fill="#f6c38b"/>
-<rect x="152" y="60" width="64" height="9" rx="4.5" fill="#2d2118"/>
-<rect x="152" y="77" width="44" height="7" rx="3.5" fill="#d9c3ab"/>
-<rect x="108" y="108" width="118" height="7" rx="3.5" fill="#f0e2d0"/>
-<rect x="108" y="124" width="96" height="7" rx="3.5" fill="#d9593b"/>
-<rect x="108" y="140" width="118" height="7" rx="3.5" fill="#f0e2d0"/>
-<rect x="108" y="156" width="80" height="7" rx="3.5" fill="#f0e2d0"/>
-<rect x="108" y="180" width="60" height="9" rx="4.5" fill="#2d2118"/>
-<rect x="108" y="196" width="104" height="7" rx="3.5" fill="#f0e2d0"/>
-<circle cx="244" cy="48" r="24" fill="#3f6b57"/>
-<path d="M233 49l8 8 14-16" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M36 176a16 16 0 0116-16h86a16 16 0 0116 16v26a16 16 0 01-16 16h-58l-22 20v-20h-6a16 16 0 01-16-16z" fill="#d9593b"/>
-<circle cx="72" cy="189" r="5" fill="#fff"/><circle cx="92" cy="189" r="5" fill="#fff"/><circle cx="112" cy="189" r="5" fill="#fff"/>
-<circle cx="276" cy="150" r="7" fill="#f6c38b"/><circle cx="292" cy="178" r="4" fill="#3f6b57"/><circle cx="40" cy="96" r="5" fill="#f6c38b"/>
-</svg>
+<div class="art-orbit"></div>
+<div class="resume-preview">
+<div class="doc-top"><span>YOUR NEXT CHAPTER</span><span>01</span></div>
+<div class="doc-name">Alex Morgan</div><div class="doc-role">STRATEGY &amp; OPERATIONS</div>
+<div class="doc-rule"></div>
+<div class="doc-label">PROFILE</div><p class="doc-copy">A clear story. A stronger first impression.</p>
+<div class="doc-line"></div><div class="doc-line short"></div>
+<div class="doc-label">EXPERIENCE</div><div class="doc-job">Make every achievement count.</div>
+<div class="doc-line"></div><div class="doc-line"></div><div class="doc-line short"></div>
+<div class="doc-label">YOUR IMPACT</div><div class="doc-line"></div><div class="doc-line short"></div>
+<div class="doc-bottom">A career story, thoughtfully told.<span>DR.</span></div>
+</div>
+<div class="floating-note"><span class="note-check">✓</span><div>Built for your next move<small>Clear. Personal. ATS-friendly.</small></div></div>
+<div class="art-caption">YOUR EXPERIENCE. BEAUTIFULLY EXPRESSED.</div>
 </div>
 <div class="chips"><span class="chip">19+ years experience</span><span class="chip">Ex-Google</span><span class="chip">ATS-friendly PDFs</span></div>
 </div>
@@ -135,7 +221,7 @@ footer{text-align:center;color:var(--muted);font-size:.88rem;padding:48px 0 40px
 <div class="band" id="services">
 <div class="wave"><svg viewBox="0 0 1200 32" preserveAspectRatio="none"><path d="M0 32V16C150 0 300 0 450 12s300 20 450 8 200-12 300-4v20z" fill="#fde3c8"/></svg></div>
 <div class="wrap">
-<div class="head"><h2>Pick what you need</h2><p>Simple prices. Secure PayPal checkout.</p></div>
+<div class="head"><span class="eyebrow">THOUGHTFUL SUPPORT. REAL EXPERIENCE.</span><h2>The right support.<br><em>For your next step.</em></h2><p>Simple prices. Secure PayPal checkout.</p></div>
 <div class="grid">
 <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5l8.5 6 8.5-6"/></svg></div><h3>Cover letter</h3><div class="price">$30</div><p>A tailored letter that speaks directly to the role you want.</p><a class="btn" href="https://www.paypal.com/ncp/payment/HSG7YD86YMR4E" target="_blank" rel="noopener">Order now</a></div>
 <div class="card c2"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21M8 10.5h5"/></svg></div><h3>Resume review</h3><div class="price">$40</div><p>A detailed review with clear, practical fixes you can use right away.</p><a class="btn" href="https://www.paypal.com/ncp/payment/9AEAMSJJDRFKA" target="_blank" rel="noopener">Order now</a></div>
@@ -147,8 +233,8 @@ footer{text-align:center;color:var(--muted);font-size:.88rem;padding:48px 0 40px
 
 <div class="wrap">
 <section class="pad">
-<div class="about">
-<div class="avatar">DR</div>
+<div class="about" id="about">
+<div class="avatar">D<span>David, your career partner</span></div>
 <div>
 <h2>Hi, I’m David</h2>
 <p>I spent nearly two decades on the hiring side of the table as a recruiter, including time at Google, before becoming a career coach.</p>
@@ -158,7 +244,7 @@ footer{text-align:center;color:var(--muted);font-size:.88rem;padding:48px 0 40px
 </section>
 
 <section class="pad">
-<div class="head"><h2>How it works</h2></div>
+<div class="head"><h2 id="process">A simple path forward.</h2></div>
 <ol class="steps">
 <li><b class="n">1</b><h3>Tell me about you</h3><p>Fill out the short form with your background and goals.</p></li>
 <li><b class="n">2</b><h3>Choose a service</h3><p>Pick your package and pay securely with PayPal.</p></li>
@@ -171,5 +257,13 @@ footer{text-align:center;color:var(--muted);font-size:.88rem;padding:48px 0 40px
 </section>
 <footer>© 2026 David Resumes · Resume &amp; Career Coaching</footer>
 </div>
-</body>
+<script>
+(() => {
+ if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+ const elements = document.querySelectorAll('#top, .art, .head, .card, .about, .steps li, .cta');
+ const observer = new IntersectionObserver(entries => { entries.forEach(entry => { if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);} }); }, {threshold:0.08});
+ elements.forEach(el => {el.classList.add('reveal'); if(el.classList.contains('card'))el.style.setProperty('--delay', `${Array.from(el.parentNode.children).indexOf(el)*0.08}s`);observer.observe(el);});
+ document.documentElement.classList.add('motion-ready');
+})();
+</script></body>
 </html>
